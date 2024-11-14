@@ -1,6 +1,12 @@
 public class ParticipantList {
-    private ParticipantList head;
+    private ParticipantNode head;
     private int size;
+
+    public ParticipantList(){
+        this.head = null;
+        this.size = 0;
+    }
+
     public class ParticipantNode{
         private Participant p;
         private ParticipantNode node;
@@ -32,11 +38,24 @@ public class ParticipantList {
         }
     }
 
+    public void setHead(ParticipantNode head){
+        this.head = head;
+    }
+
+    public ParticipantNode getHead() {
+        return head;
+    }
+
     public void setSize(int size) {
         this.size = size;
     }
 
     public int getSize() {
         return size;
+    }
+
+    public void addToStart(Participant p){
+        head = new ParticipantNode(p, head);
+        size++;
     }
 }

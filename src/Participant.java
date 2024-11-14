@@ -4,6 +4,7 @@ public class Participant {
     private String participantID = "";
     private String participantName = "";
     private int[] diyaCollection = new int[5];
+    public static int variableForID = 0;
 
     public Participant(String participantID, String participantName, int[] diyaCollection){
         this.participantID = participantID;
