@@ -102,9 +102,9 @@ public class Main {
         //testing find method
 //        Participant result = participantList.find("P4");
 //        if(result == null){
-//            System.out.println("No participant found");
+//            System.out.println("No participant found" + "\nIteration count: " + ParticipantList.iterationCount);
 //        }else{
-//            System.out.println(result.getParticipantID()+ " " + result.getParticipantName() + " " + Arrays.toString(result.getDiyaCollection()));
+//            System.out.println(result.getParticipantID()+ " " + result.getParticipantName() + " " + Arrays.toString(result.getDiyaCollection()) + "\nIteration count: " + ParticipantList.iterationCount);
 //        }
 
         //testing contains method

@@ -29,6 +29,7 @@ public class ParticipantList {
     private ParticipantNode head;
     private int size;
     public static ArrayList<Participant> allParticipants = new ArrayList<>();
+    public static int iterationCount = 0;
 
     /**
      * Constructs an empty {@code ParticipantList}.
@@ -224,6 +225,7 @@ public class ParticipantList {
     public Participant find(String participantID) {
         ParticipantNode current = head;
         while (current != null) {
+            iterationCount++;
             if (current.p.getParticipantID().equals(participantID)){
                 return current.p.clone();
             }
